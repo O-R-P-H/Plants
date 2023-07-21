@@ -56,6 +56,7 @@
     justify-content: space-between;
   }
   .password{
+    outline: none;
     color: #F2F2F2;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
@@ -68,6 +69,7 @@
     border-style: hidden;
   }
   .usermname{
+    outline: none;
     color: #F2F2F2;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
@@ -123,13 +125,102 @@
     height: 100%;
     width:100%;
     background-image: url("public/img/desctop_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 768px) {
-  .main_div{
-    display: grid;
-    height: 100vh;
+  input::placeholder{
+    color: #F2F2F2;
+  }
+
+  #log{
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1px;;
+    margin-left: 0;
+  }
+  #reg{
+    cursor: pointer;
+    color: #5A7324;
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1px;;
+    margin-left: 0;
+  }
+
+  .buttons{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .password{
+    outline: none;
+    color: #F2F2F2;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding-left: 26px;
+    margin-top: 19px;
+    width: 85%;
+    height: 53px;
+    border-radius: 40px;
+    background: rgba(242, 242, 242, 0.50);
+    border-style: hidden;
+  }
+  .usermname{
+    outline: none;
+    color: #F2F2F2;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding-left: 26px;
+    margin-top: 208px;
+    width: 85%;
+    height: 53px;
+    border-radius: 40px;
+    background: rgba(242, 242, 242, 0.50);
+    border-style: hidden;
+  }
+  .subtitle p{
+    letter-spacing: 1.2px;
+    width: 178px;
+    margin: 0;
+  }
+  .subtitle {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserat', sans-serif;
+    color: #F2F2F2;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .title_div{
+    height:50px ;
+    display: flex;
+    justify-content: center;
     width: 100%;
+    font-size: 92px;
+    color: #F2F2F2;
+    font-weight: 900;
+    font-family: 'Montserat' ,sans-serif ;
+    letter-spacing: 9.66px;
+    margin-top: 100px;
+  }
+    .main_div {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width:100%;
     background-image: url("public/img/mobile_back.png");
     background-repeat: no-repeat;
     background-size: cover;
