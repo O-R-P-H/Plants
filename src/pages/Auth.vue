@@ -1,25 +1,34 @@
 <script>
+import router from "@/router";
 
+export default {
+  name:'Auth',
+  methods:{
+    PushToMain(){
+      router.push({name:'Main'})
+    }
+  }
+}
 </script>
 <template>
 
 
 
-<div class="main_div">
-<div class="title_div">
-  <img src="./././../public/img/main%20title.svg" alt="main">
-</div>
-  <div class="subtitle">
-    <p>All plants for your home
-      in one app.</p>
+  <div class="main_div">
+    <div class="title_div">
+      <img src="/public/img/main%20title.svg" alt="main">
+    </div>
+    <div class="subtitle">
+      <p>All plants for your home
+        in one app.</p>
+    </div>
+    <input type="email" placeholder="username" class="usermname" >
+    <input type="password" placeholder="password" class="password" >
+    <div class="buttons">
+      <p id="reg">REGISTER</p>
+      <p @click="PushToMain" id="log">LOGIN</p>
+    </div>
   </div>
-  <input type="email" placeholder="username" class="usermname" >
-  <input type="password" placeholder="password" class="password" >
-  <div class="buttons">
-    <p id="reg">REGISTER</p>
-    <p id="log">LOGIN</p>
-  </div>
-</div>
 </template>
 
 <style scoped>
@@ -215,12 +224,12 @@
     letter-spacing: 9.66px;
     margin-top: 100px;
   }
-    .main_div {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      width:100%;
+  .main_div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
     background-image: url("public/img/mobile_back.png");
     background-repeat: no-repeat;
     background-size: cover;
